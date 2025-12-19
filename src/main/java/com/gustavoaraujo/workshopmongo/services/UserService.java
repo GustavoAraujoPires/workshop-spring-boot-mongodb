@@ -19,4 +19,7 @@ public class UserService {
 		}
 	
 	
+	public User findById(String id) {
+		return repo.findById(id).orElse(null);
+	}
 }
